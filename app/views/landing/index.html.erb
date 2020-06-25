@@ -1,0 +1,10 @@
+<h3>Landing index page</h3>
+
+<div id="message">
+
+</div>
+
+<%= form_for @message, remote: true do |message| %>
+  <%= message.text_field :content %>
+  <%= message.submit "Send", id: "send" %>
+<% end %>
