@@ -16,13 +16,11 @@ $(document).on('turbolinks:load',function() {
 
     connected()
     {
-      console.log("connected");
       // Called when the subscription is ready for use on the server
     },
 
     disconnected()
     {
-      console.log("disconnected");
 
       // Called when the subscription has been terminated by the server
     },
@@ -41,7 +39,6 @@ $(document).on('turbolinks:load',function() {
       }
       const messages = document.getElementById("messages");
       messages.innerHTML =  messages.innerHTML + html;
-      console.log(data.message.user_id);
       var scroll=$('#messages');
       scroll.animate({scrollTop: scroll.prop("scrollHeight")});
 
@@ -55,8 +52,8 @@ var submit_messages;
 
 $(document).on('turbolinks:load',function()
 {
-  var scroll=$('#messages');
-  scroll.animate({scrollTop: scroll.prop("scrollHeight")});
+  var objDiv = document.getElementById("messages");
+  objDiv.scrollTop = objDiv.scrollHeight;
   submit_messages();
 });
 
@@ -65,7 +62,6 @@ submit_messages = function() {
     $('#message_content').on('keyup',function(){
       if (event.keyCode === 13)
       {
-
         event.target.value = "";
         event.preventDefault();
       }

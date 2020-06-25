@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8b11789e-d9e2-4e8f-a085-96198c885170" name="Default" comment="" />
+    <list default="true" id="8b11789e-d9e2-4e8f-a085-96198c885170" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/javascript/channels/room_channel.js" afterPath="$PROJECT_DIR$/app/javascript/channels/room_channel.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -20,8 +23,8 @@
       <file leaf-file-name="room_channel.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/javascript/channels/room_channel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="45" column="63" lean-forward="false" selection-start-line="45" selection-start-column="63" selection-end-line="45" selection-end-column="63" />
+            <state relative-caret-position="460">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1177,12 +1180,12 @@
       <option name="presentableId" value="Default" />
       <updated>1592991665190</updated>
       <workItem from="1592991669025" duration="33353000" />
-      <workItem from="1593059094207" duration="9997000" />
+      <workItem from="1593059094207" duration="11510000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43350000" />
+    <option name="totallyTimeSpent" value="44863000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1280" height="752" extended-state="0" />
@@ -1582,8 +1585,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/javascript/channels/room_channel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="45" column="63" lean-forward="false" selection-start-line="45" selection-start-column="63" selection-end-line="45" selection-end-column="63" />
+        <state relative-caret-position="460">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
