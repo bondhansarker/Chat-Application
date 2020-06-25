@@ -6,8 +6,16 @@
     <div class="col-3 rooms-sidebar">
       <div class="card no-outline">
         <div class="card-body">
-          <small>Logged in as</small><br>
-          <b><%= current_user.name %><br></b>
+
+          <div class="dropdown">
+            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <small>Logged in as</small> <%= current_user.name %>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <%= link_to "Edit Profile", edit_user_registration_path, class: 'dropdown-item' %>
+              <%= link_to "Logout", destroy_user_session_path, method: :delete, class: 'dropdown-item' %>
+            </div>
+          </div>
         </div>
       </div>
       
@@ -33,9 +41,10 @@
         <div class="chat-room">
           <nav class="navbar navbar-light">
             <span class="navbar-brand" href="#">
-              <b><%= @room.name %></b>
+              <b><%= @room.name %></b><br>
+              <small><%= @room.users.uniq.count %> Members </small>
             </span>
-            <small><%= @room.users.uniq.count %> Members</small>
+            <%= link_to 'Delete', @room, method: :delete, class:"btn btn-danger", data: { confirm: 'Are you sure?' } %>
           </nav>
           <div id="messages">
             <% @room.messages.each do |message| %>

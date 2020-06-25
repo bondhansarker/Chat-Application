@@ -1,4 +1,6 @@
 Rails.application.configure do
+  require 'socket'
+  require 'ipaddr'
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -11,6 +13,8 @@ Rails.application.configure do
 
   # Show full error reports.
   config.consider_all_requests_local = true
+  config.hosts << "15396df86192.ngrok.io"
+  config.web_console.whiny_requests = false
 
   # Enable/disable caching. By default caching is disabled.
   # Run rails dev:cache to toggle caching.
